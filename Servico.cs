@@ -15,15 +15,29 @@ public class Servico : BackgroundService
         _logger = logger;
     }
 
-    public async Task<Repositorio> GetRepository(string owner, string repo)
-    {   
-        using (var httpClient = new HttpClient())
+   public async Task GetRepositoryAndInsertToSQLServer(string owner, string repo, string connectionString)
+ {   
+        
+    using (var httpClient = new HttpClient())
         {
             httpClient.DefaultRequestHeaders.Add("User-Agent", "MyApp");
             var response = await httpClient.GetAsync($"https://api.github.com/repos/{owner}/{repo}");
             var json = await response.Content.ReadAsStringAsync();
             var repository = JsonConvert.DeserializeObject<Repositorio>(json);
-            return repository;
+
+            using (var connection = new SqlConnection(connectionString))
+            {
+                var commandText = "INSERT INTO Repositories (Name, Description, Stars, Forks) " +
+                                "VALUES (@Name, @Description, @Stars, @Forks)";
+                var command = new SqlCommand(commandText, connection);
+                command.Parameters.AddWithValue("@Name", repository.Name);
+                command.Parameters.AddWithValue("@Description", repository.Description);
+                command.Parameters.AddWithValue("@Stars", repository.Stars);
+                command.Parameters.AddWithValue("@Forks", repository.Forks);
+
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
         }
     }
 
@@ -33,12 +47,10 @@ public class Servico : BackgroundService
     {
         while (!stoppingToken.IsCancellationRequested)
         {
+            var connectionString = "Data Source=myServerAddress;Initial Catalog=myDataBase;User Id=myUsername;Password=myPassword;";
+            await GetRepositoryAndInsertToSQLServer("dotnet", "roslyn", connectionString);
 
-            var repository = await GetRepository("dotnet", "roslyn");
-            Console.WriteLine(repository.Name);
-            Console.WriteLine(repository.Description);
-            Console.WriteLine(repository.Stars);
-            Console.WriteLine(repository.Forks);                
+                
                     
                         
             await Task.Delay(10000, stoppingToken);
