@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/media/dbati/DocLinux/13_DEV/GAZETA/POC/ApiWorker2/ApiWorker.csproj": {}
+    "C:\\Arquivos\\POC\\POC_Dotnet\\ApiWorker.csproj": {}
   },
   "projects": {
-    "/media/dbati/DocLinux/13_DEV/GAZETA/POC/ApiWorker2/ApiWorker.csproj": {
+    "C:\\Arquivos\\POC\\POC_Dotnet\\ApiWorker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/media/dbati/DocLinux/13_DEV/GAZETA/POC/ApiWorker2/ApiWorker.csproj",
+        "projectUniqueName": "C:\\Arquivos\\POC\\POC_Dotnet\\ApiWorker.csproj",
         "projectName": "ApiWorker",
-        "projectPath": "/media/dbati/DocLinux/13_DEV/GAZETA/POC/ApiWorker2/ApiWorker.csproj",
-        "packagesPath": "/home/dbati/.nuget/packages/",
-        "outputPath": "/media/dbati/DocLinux/13_DEV/GAZETA/POC/ApiWorker2/obj/",
+        "projectPath": "C:\\Arquivos\\POC\\POC_Dotnet\\ApiWorker.csproj",
+        "packagesPath": "C:\\Users\\pverly\\.nuget\\packages\\",
+        "outputPath": "C:\\Arquivos\\POC\\POC_Dotnet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/dbati/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\pverly\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,15 +40,15 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
-              "target": "Package",
-              "version": "[7.0.4, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.4, )"
             },
@@ -86,22 +88,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.14, 6.0.14]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[6.0.14, 6.0.14]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.407\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,5 @@
+
+
+
+# Referências
+dotnet new gitignore
