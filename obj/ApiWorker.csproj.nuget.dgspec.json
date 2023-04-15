@@ -40,6 +40,18 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[30.0.1, )"
+            },
+            "CsvTools": {
+              "target": "Package",
+              "version": "[1.0.12, )"
+            },
+            "LumenWorksCsvReader": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.1.1, )"

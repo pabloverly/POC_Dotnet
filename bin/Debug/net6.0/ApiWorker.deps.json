@@ -8,6 +8,9 @@
     ".NETCoreApp,Version=v6.0": {
       "ApiWorker/1.0.0": {
         "dependencies": {
+          "CsvHelper": "30.0.1",
+          "CsvTools": "1.0.12",
+          "LumenWorksCsvReader": "4.0.0",
           "Microsoft.Data.SqlClient": "5.1.1",
           "Microsoft.EntityFrameworkCore": "7.0.4",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.4",
@@ -56,6 +59,22 @@
           }
         }
       },
+      "CsvHelper/30.0.1": {
+        "runtime": {
+          "lib/net6.0/CsvHelper.dll": {
+            "assemblyVersion": "30.0.0.0",
+            "fileVersion": "30.0.1.0"
+          }
+        }
+      },
+      "CsvTools/1.0.12": {
+        "runtime": {
+          "lib/CsvReader.dll": {
+            "assemblyVersion": "0.9.0.0",
+            "fileVersion": "0.9.0.0"
+          }
+        }
+      },
       "Elasticsearch.Net/7.17.5": {
         "dependencies": {
           "Microsoft.CSharp": "4.6.0",
@@ -66,6 +85,14 @@
           "lib/netstandard2.1/Elasticsearch.Net.dll": {
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.17.5.0"
+          }
+        }
+      },
+      "LumenWorksCsvReader/4.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/LumenWorks.Framework.IO.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
           }
         }
       },
@@ -1245,12 +1272,33 @@
       "path": "azure.identity/1.7.0",
       "hashPath": "azure.identity.1.7.0.nupkg.sha512"
     },
+    "CsvHelper/30.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rcZtgbWR+As4G3Vpgx0AMNmShGuQLFjkHAPIIflzrfkJCx8/AOd4m96ZRmiU1Wi39qS5UVjV0P8qdgqOo5Cwyg==",
+      "path": "csvhelper/30.0.1",
+      "hashPath": "csvhelper.30.0.1.nupkg.sha512"
+    },
+    "CsvTools/1.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/Rx4PpyePlufSwujzcYDC4CmgwRvlZgX5mujW0Bwu4aAA8NTdpL29VSkuggX1BQlTJjlenVIgg/2RwMGJ/tfdw==",
+      "path": "csvtools/1.0.12",
+      "hashPath": "csvtools.1.0.12.nupkg.sha512"
+    },
     "Elasticsearch.Net/7.17.5": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-orChsQi1Ceho/NyIylNOn6y4vuGcsbCfMZnCueNN0fzqYEGQmQdPfcVmsR5+3fwpXTgxCdjTUVmqOwvHpCSB+Q==",
       "path": "elasticsearch.net/7.17.5",
       "hashPath": "elasticsearch.net.7.17.5.nupkg.sha512"
+    },
+    "LumenWorksCsvReader/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CP6bPmDbmV5yT7YwfGxN8Agrdj0nB82b2UitfrnTghqyfF4DXD4UXl8MoCXBz4Ja17bUYqpEDd+qaavh7lwUxg==",
+      "path": "lumenworkscsvreader/4.0.0",
+      "hashPath": "lumenworkscsvreader.4.0.0.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/4.0.20710": {
       "type": "package",

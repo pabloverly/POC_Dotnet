@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "Y8F2NVKzHCnj7/XKc+qZR3XrrFFNV+LRojLWiHvaDfyC4BA+9eulNWQ0QtQSTozNCPz8xDKjAcUBt/XLkCyd1w==",
+  "dgSpecHash": "DvY3cqdCqlEAg3XOZSIN7lkbxbf5uYX5ykSEZ8Xm6iLAMc13g8HFYnTlf6uxSkcIMMSEFtfb5wO+kCPtJrpHnw==",
   "success": true,
   "projectFilePath": "C:\\Arquivos\\POC\\POC_Dotnet\\ApiWorker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pverly\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\pverly\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\pverly\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
+    "C:\\Users\\pverly\\.nuget\\packages\\csvtools\\1.0.12\\csvtools.1.0.12.nupkg.sha512",
     "C:\\Users\\pverly\\.nuget\\packages\\elasticsearch.net\\7.17.5\\elasticsearch.net.7.17.5.nupkg.sha512",
+    "C:\\Users\\pverly\\.nuget\\packages\\lumenworkscsvreader\\4.0.0\\lumenworkscsvreader.4.0.0.nupkg.sha512",
     "C:\\Users\\pverly\\.nuget\\packages\\microsoft.aspnet.webapi.client\\4.0.20710\\microsoft.aspnet.webapi.client.4.0.20710.nupkg.sha512",
     "C:\\Users\\pverly\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\pverly\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
@@ -119,6 +122,16 @@
     "C:\\Users\\pverly\\.nuget\\packages\\webapicontrib.formatting.javascriptserializer\\0.9.4\\webapicontrib.formatting.javascriptserializer.0.9.4.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'CsvTools 1.0.12' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net6.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "CsvTools",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",

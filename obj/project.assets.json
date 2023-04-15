@@ -46,6 +46,28 @@
           }
         }
       },
+      "CsvHelper/30.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CsvHelper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CsvHelper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CsvTools/1.0.12": {
+        "type": "package",
+        "compile": {
+          "lib/CsvReader.dll": {}
+        },
+        "runtime": {
+          "lib/CsvReader.dll": {}
+        }
+      },
       "Elasticsearch.Net/7.17.5": {
         "type": "package",
         "dependencies": {
@@ -60,6 +82,19 @@
         },
         "runtime": {
           "lib/netstandard2.1/Elasticsearch.Net.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "LumenWorksCsvReader/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/LumenWorks.Framework.IO.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/LumenWorks.Framework.IO.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -2061,6 +2096,43 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
+    "CsvHelper/30.0.1": {
+      "sha512": "rcZtgbWR+As4G3Vpgx0AMNmShGuQLFjkHAPIIflzrfkJCx8/AOd4m96ZRmiU1Wi39qS5UVjV0P8qdgqOo5Cwyg==",
+      "type": "package",
+      "path": "csvhelper/30.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "csvhelper.30.0.1.nupkg.sha512",
+        "csvhelper.nuspec",
+        "lib/net45/CsvHelper.dll",
+        "lib/net45/CsvHelper.xml",
+        "lib/net47/CsvHelper.dll",
+        "lib/net47/CsvHelper.xml",
+        "lib/net5.0/CsvHelper.dll",
+        "lib/net5.0/CsvHelper.xml",
+        "lib/net6.0/CsvHelper.dll",
+        "lib/net6.0/CsvHelper.xml",
+        "lib/netstandard2.0/CsvHelper.dll",
+        "lib/netstandard2.0/CsvHelper.xml",
+        "lib/netstandard2.1/CsvHelper.dll",
+        "lib/netstandard2.1/CsvHelper.xml"
+      ]
+    },
+    "CsvTools/1.0.12": {
+      "sha512": "/Rx4PpyePlufSwujzcYDC4CmgwRvlZgX5mujW0Bwu4aAA8NTdpL29VSkuggX1BQlTJjlenVIgg/2RwMGJ/tfdw==",
+      "type": "package",
+      "path": "csvtools/1.0.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "csvtools.1.0.12.nupkg.sha512",
+        "csvtools.nuspec",
+        "lib/CsvReader.dll",
+        "lib/CsvReader.xml"
+      ]
+    },
     "Elasticsearch.Net/7.17.5": {
       "sha512": "orChsQi1Ceho/NyIylNOn6y4vuGcsbCfMZnCueNN0fzqYEGQmQdPfcVmsR5+3fwpXTgxCdjTUVmqOwvHpCSB+Q==",
       "type": "package",
@@ -2081,6 +2153,35 @@
         "lib/netstandard2.1/Elasticsearch.Net.xml",
         "license.txt",
         "nuget-icon.png"
+      ]
+    },
+    "LumenWorksCsvReader/4.0.0": {
+      "sha512": "CP6bPmDbmV5yT7YwfGxN8Agrdj0nB82b2UitfrnTghqyfF4DXD4UXl8MoCXBz4Ja17bUYqpEDd+qaavh7lwUxg==",
+      "type": "package",
+      "path": "lumenworkscsvreader/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/LumenWorks.Framework.IO.dll",
+        "lib/net20/LumenWorks.Framework.IO.pdb",
+        "lib/net20/LumenWorks.Framework.IO.xml",
+        "lib/net35/LumenWorks.Framework.IO.dll",
+        "lib/net35/LumenWorks.Framework.IO.pdb",
+        "lib/net35/LumenWorks.Framework.IO.xml",
+        "lib/net45/LumenWorks.Framework.IO.dll",
+        "lib/net45/LumenWorks.Framework.IO.pdb",
+        "lib/net45/LumenWorks.Framework.IO.xml",
+        "lib/net461/LumenWorks.Framework.IO.dll",
+        "lib/net461/LumenWorks.Framework.IO.pdb",
+        "lib/net461/LumenWorks.Framework.IO.xml",
+        "lib/netstandard1.3/LumenWorks.Framework.IO.dll",
+        "lib/netstandard1.3/LumenWorks.Framework.IO.pdb",
+        "lib/netstandard1.3/LumenWorks.Framework.IO.xml",
+        "lib/netstandard2.0/LumenWorks.Framework.IO.dll",
+        "lib/netstandard2.0/LumenWorks.Framework.IO.pdb",
+        "lib/netstandard2.0/LumenWorks.Framework.IO.xml",
+        "lumenworkscsvreader.4.0.0.nupkg.sha512",
+        "lumenworkscsvreader.nuspec"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/4.0.20710": {
@@ -6261,6 +6362,9 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CsvHelper >= 30.0.1",
+      "CsvTools >= 1.0.12",
+      "LumenWorksCsvReader >= 4.0.0",
       "Microsoft.Data.SqlClient >= 5.1.1",
       "Microsoft.EntityFrameworkCore >= 7.0.4",
       "Microsoft.EntityFrameworkCore.Relational >= 7.0.4",
@@ -6311,6 +6415,18 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "CsvHelper": {
+            "target": "Package",
+            "version": "[30.0.1, )"
+          },
+          "CsvTools": {
+            "target": "Package",
+            "version": "[1.0.12, )"
+          },
+          "LumenWorksCsvReader": {
+            "target": "Package",
+            "version": "[4.0.0, )"
+          },
           "Microsoft.Data.SqlClient": {
             "target": "Package",
             "version": "[5.1.1, )"
@@ -6369,6 +6485,16 @@
     }
   },
   "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'CsvTools 1.0.12' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net6.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "CsvTools",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",
