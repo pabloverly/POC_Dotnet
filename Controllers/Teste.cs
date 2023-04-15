@@ -5,12 +5,12 @@ using ApiWorker;
 
 namespace ApiWorker;
 
-public class Controller : BackgroundService
+public class Teste : BackgroundService
 {
     private const string Url = "https://dog.ceo/api/breeds/list/all";
     private readonly ILogger<Worker> _logger;
 
-    public Controller(ILogger<Worker> logger)
+    public Teste(ILogger<Worker> logger)
     {
         _logger = logger;
     }
